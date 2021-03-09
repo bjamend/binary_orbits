@@ -16,16 +16,16 @@ struct BallisticParticle {
 // Define struct for galactic potential model
 #[derive(Debug, Add, Sub, Mul, Div)]
 struct GalacticPotential {
-    g:   f64,
-    m_b: f64,
-    a_b: f64,
-    v_h: f64,
-    a_h: f64,
-    m_s: f64,
-    a_s: f64,
-    b_s: f64,
-    m_g: f64,
-    b_g: f64,
+    g:   f64, // gravitational constant (kpc*kpc*kpc/Myr/Myr/slr)
+    m_b: f64, // mass of central bulge (slr)
+    a_b: f64, // radial scale length of central bulge (kpc)
+    v_h: f64, // radial velocities at large distances (kpc/Myr)
+    a_h: f64, // radial scale length of dark matter halo (kpc)
+    m_s: f64, // mass of thin disk (slr)
+    a_s: f64, // radial scale length of thick and thin disks (kpc)
+    b_s: f64, // vertical scale length of thin disk (kpc)
+    m_g: f64, // mass of thick disk (slr)
+    b_g: f64, // vertical scale length of thick disk (kpc)
 }
 
 //---------------------------------------------------------------------------------------------\\
