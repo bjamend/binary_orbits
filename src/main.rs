@@ -5,12 +5,12 @@ use derive_more::{Add,Sub, Mul, Div};
 // Define struct for all time-evolving quantities
 #[derive(Debug, Add, Sub, Mul, Div)]
 struct BallisticParticle {
-    x:   f64,
-    y:   f64,
-    z:   f64,
-    v_x: f64,
-    v_y: f64,
-    v_z: f64,
+    x:   f64, // (kpc)
+    y:   f64, // (kpc)
+    z:   f64, // (kpc)
+    v_x: f64, // (kpc/Myr)
+    v_y: f64, // (kpc/Myr)
+    v_z: f64, // (kpc/Myr)
 }
 
 // Define struct for galactic potential model
