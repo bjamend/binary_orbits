@@ -49,8 +49,10 @@ impl GalacticPotential {
                        v_h * v_h / (x * x + y * y + z * z + a_h * a_h));
                        
         let az = -z * (g * m_b / ((x * x + y * y + z * z + a_b * a_b).powf(1.5)) +
-                       g * m_g / ((x * x + y * y + (a_s + (z * z + b_g * b_g).sqrt()).powi(2)).powf(1.5)) * (a_s + (z * z + b_g * b_g).sqrt()) / ((z * z + b_g * b_g).sqrt()) +
-                       g * m_s / ((x * x + y * y + (a_s + (z * z + b_s * b_s).sqrt()).powi(2)).powf(1.5)) * (a_s + (z * z + b_s * b_s).sqrt()) / ((z * z + b_s * b_s).sqrt()) +
+                       g * m_g / ((x * x + y * y + (a_s + (z * z + b_g * b_g).sqrt()).powi(2)).powf(1.5)) *
+                       (a_s + (z * z + b_g * b_g).sqrt()) / ((z * z + b_g * b_g).sqrt()) +
+                       g * m_s / ((x * x + y * y + (a_s + (z * z + b_s * b_s).sqrt()).powi(2)).powf(1.5)) *
+                       (a_s + (z * z + b_s * b_s).sqrt()) / ((z * z + b_s * b_s).sqrt()) +
                        v_h * v_h / (x * x + y * y + z * z + a_h * a_h));
         (ax, ay, az)
     }
