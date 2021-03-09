@@ -34,21 +34,6 @@ struct GalacticPotential {
 
 impl GalacticPotential {
 
-    fn new() -> Self{
-        Self {
-            g  : 4.49368236e-12,
-            m_b: 0.12268000e+11,
-            a_b: 0.328530,
-            v_h: 0.1801580941,
-            a_h: 33.26089,
-            m_s: 0.884517e11,
-            a_s: 4.383000,
-            b_s: 0.307799,
-            m_g: 0.087718e11,
-            b_g: 0.986541,
-        }
-    }
-
     fn acceleration(&self, r: (f64, f64, f64)) -> (f64, f64, f64) {
         let Self {g, m_b, a_b, v_h, a_h, m_s, a_s, b_s, m_g, b_g} = self;
         let (x, y, z) = r;
